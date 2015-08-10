@@ -1,5 +1,6 @@
 $color_dark: grey;
 $color_light: #eee;
+$mediaQ_width: 650px;
 
 * {
 	padding: 0;
@@ -110,7 +111,7 @@ footer {
     overflow: auto;
 }
 
-@media (max-width: 650px) {
+@media (max-width: $mediaQ_width) {
 	article {
 		width: 100%;
 	}
@@ -157,7 +158,7 @@ footer {
 	display: none;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: $mediaQ_width){
 	#menu {
 		display: none;
 		opacity: 0;
@@ -199,7 +200,7 @@ footer {
 	text-align: center;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: $mediaQ_width){
 	#menu{
 	    background: $color_light;
     	border-right: none;
